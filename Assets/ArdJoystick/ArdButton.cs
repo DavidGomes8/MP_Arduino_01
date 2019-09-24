@@ -2,10 +2,18 @@
 {
 	public enum ArdKeyCode
 	{
-		BUTTON_A,
-		BUTTON_B,
-		BUTTON_X,
-		BUTTON_Y
+        BUTTON_LEFT,
+        BUTTON_DOWN,
+        BUTTON_UP,
+        BUTTON_RIGHT,
+
+        BUTTON_START,
+        BUTTON_SELECT,
+
+        BUTTON_Y,//a
+		BUTTON_B,//b
+		BUTTON_X,//x
+		BUTTON_A //y
 	}
 
 	public class ArdButton
@@ -25,6 +33,7 @@
 
 		public void ProcessData(int data)
 		{
+
 			if (data == 1 && oldData == 0)
 			{
 				keyDown = true;
